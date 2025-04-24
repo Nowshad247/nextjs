@@ -1,0 +1,53 @@
+[
+  {
+    _id: "1",
+    title: "Home",
+    url: "/",
+    order: 1,
+    children: [],
+  },
+  {
+    _id: "2",
+    title: "About Us",
+    url: "/about",
+    order: 2,
+    children: [],
+  },
+  {
+    _id: "3",
+    title: "Services",
+    url: "/services",
+    order: 3,
+    children: [
+      {
+        _id: "3.1",
+        title: "Web Development",
+        url: "/services/web-development",
+      },
+      {
+        _id: "3.2",
+        title: "SEO",
+        url: "/services/seo",
+      },
+      {
+        _id: "3.3",
+        title: "Digital Marketing",
+        url: "/services/digital-marketing",
+      },
+    ],
+  },
+  {
+    _id: "4",
+    title: "Blog",
+    url: "/blog",
+    order: 4,
+    children: [],
+  },
+  {
+    _id: "5",
+    title: "Contact",
+    url: "/contact",
+    order: 5,
+    children: [],
+  },
+];
