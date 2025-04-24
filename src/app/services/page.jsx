@@ -64,7 +64,7 @@ export default function ServicesPage() {
             <img src={service.freeImage} alt={service.title} />
            <Link className='outline-2 outline-offset-2 outline-blue-500' href={`/services/${service.id}`}>
               Details
-              </Link>
+            </Link>
           </div>
         ))
       }

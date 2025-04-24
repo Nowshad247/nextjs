@@ -55,7 +55,6 @@ const menu = [
     children: [],
   },
 ];
-
   return (
     <div className="navbar bg-base-100 shadow-sm">
     <div className="navbar-start">
@@ -74,13 +73,15 @@ const menu = [
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-          { 
-            menu.map((item) => (
-              <li key={item._id}>
-                <Link href={item.url} className="font-[family-name:var(--font-geist-sans)]">{item.title}</Link>
+          {menu.map((item) => {
+            return (
+              <li key={item._id} className=''>
+                <Link href={item.url} className="text-base font-semibold">
+                  {item.title}
+                </Link>
               </li>
-            ))  
-          }
+            )
+          })}
     </ul>
   </div>
   <div className="navbar-end">
