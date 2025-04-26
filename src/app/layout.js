@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
 const inter = Inter({
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} bg-white text-slate-900 antialiased dark:bg-slate-900 dark:text-slate-50`}
       >
-        <NavBar />
         <div className="relative h-screen">
           <div className="absolute inset-0">
             <div className="relative h-full w-full bg-red [&>div]:absolute [&>div]:h-full [&>div]:w-full [&>div]:bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [&>div]:[background-size:16px_16px] [&>div]:[mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]">
