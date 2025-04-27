@@ -1,9 +1,11 @@
+import { getServerSession } from "next-auth";
 import HomeBanner from "./components/HomeBanner";
-import NavBar from "./components/NavBar";
-export default function Home() {
+import { authOptions } from "./api/auth/[...nextauth]/route";
+export default async function Home() {
+  const session = await getServerSession(authOptions);
   return (
     <div>
-      <NavBar />
+      {JSON.stringify(session)}
       <HomeBanner />
     </div>
   );
